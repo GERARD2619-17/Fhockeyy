@@ -1,0 +1,11 @@
+POST http://localhost:1337/api/empleados
+Content-Type: application/json
+
+{
+    "data":{
+        "Nombres": "Rashell Stefania",
+        "Apellidos": "Martinez Perez",
+        "Email": "mp2002@gmail.com",
+        "Password": "Mp2002"
+    }
+}
