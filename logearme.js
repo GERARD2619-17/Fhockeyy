@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     loginForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
+        // @ts-ignore
         const email = document.getElementById('email').value;
+        // @ts-ignore
         const password = document.getElementById('password').value;
 
         try {
