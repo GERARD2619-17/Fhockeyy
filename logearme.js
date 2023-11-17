@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('password').value;
 
         try {
-            const response = await fetch('https://sweet-elephant-lively.ngrok-free.app/api/auth/local', {
+            const response = await fetch('http://localhost:1337/api/auth/local', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('token', data.jwt);
 
                 // Redirige al usuario a una página ficticia de inicio.
-                window.location.href = 'home.html';
+                window.location.href = './MenuDashboard/Dashboard.html';
             } else {
                 console.error('Error de inicio de sesión');
             }

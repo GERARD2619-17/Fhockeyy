@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "singularName": "player",
+    "pluralName": "players",
+    "displayName": "player"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombrejugador": {
+      "type": "string"
+    },
+    "FechaNac": {
+      "type": "date"
+    },
+    "Estatura": {
+      "type": "string"
+    },
+    "Posicion": {
+      "type": "string"
+    },
+    "Genero": {
+      "type": "string"
+    },
+    "ImgJugador": {
+      "type": "string"
+    }
+  }
+}
