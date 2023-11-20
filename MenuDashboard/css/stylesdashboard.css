@@ -145,14 +145,6 @@ pointer-events: none;
     min-height: 100vh;
     background: var(--white);
     transition: 0.5s;
-    /*body-players*/
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    background-image: url('/MenuDashboard/imgDashboard/logohockeyicon-512x512.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
 }
 .main.active
 {
