@@ -5,110 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>players</title>
     <link rel="stylesheet" type="text/css" href="/MenuDashboard/css/stylesdashboard.css"/>
-    <link rel="stylesheet" type="text/css" href="/MenuDashboard/css/playerstyle.css"/>
 </head>
 <body>
-    <div class="container">
-        <div class="navigation">
-            <ul>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
-                        <span class="title">Brand Name</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                        <span class="title">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                        <span class="title">Customer</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
-                        <span class="title">Message</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
-                        <span class="title">Help</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-                        <span class="title">Setting</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                        <span class="title">Password</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-                        <span class="title">Sign Out</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+            <span class="title">Brand Name</span>
+          </a>
+        </li>
 
-        <!-- main -->
-        <div class="main" id="mainContent">
-            <div class="topbar">
-                <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </div>
-                <!-- search -->
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Search here" />
-                        <ion-icon name="search-outline"></ion-icon>
-                    </label>
-                </div>
-                <!-- userImg -->
-                <div class="user">
-                    <img src="/MenuDashboard/imgDashboard/user.jpg" />
-                </div>
-            </div>
+        <li>
+          <a href="Dashboard.html">
+            <span class="icon"
+              ><ion-icon name="home-outline"></ion-icon
+            ></span>
+            <span class="title">Dashboard</span>
+          </a>
+        </li>
 
-            <!-- cards -->
-            <div class="cardBox">
-                <!-- ... (resto del contenido de las tarjetas) -->
-            </div>
-        </div>
+        <li>
+          <a href="players.html">
+            <span class="icon"
+              ><ion-icon name="person-outline"></ion-icon
+            ></span>
+            <span class="title">Jugadoress</span>
+          </a>
+
+          
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="chatbubbles-outline"></ion-icon
+            ></span>
+            <span class="title">Message</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="help-outline"></ion-icon
+            ></span>
+            <span class="title">Help</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="settings-outline"></ion-icon
+            ></span>
+            <span class="title">Setting</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <span class="title">Password</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="log-out-outline"></ion-icon
+            ></span>
+            <span class="title">Sign Out</span>
+          </a>
+        </li>
+      </ul>
     </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- main -->
+    <div class="main">
+      <div class="topbar">
+        <div class="toggle">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <!-- search -->
+        <div class="search">
+          <label>
+            <input type="text" placeholder="Search here" />
+            <ion-icon name="search-outline"></ion-icon>
+          </label>
+        </div>
+        <!-- userImg -->
+        <div class="user">
+          <img src="/MenuDashboard/imgDashboard/user.jpg" />
+        </div>
+      </div>
+      <!--formularios dashbords-->
+      <div class="body-players">
+        <div class="form-container">
 
-    <script>
-        // Obtén el contenedor principal
-        let mainContent = document.getElementById("mainContent");
+          <form id="playerForm">
+              <label for="name">Nombre del Jugador:</label>
+              <input type="text" id="name" name="name">
+      
+              <label for="age">Edad:</label>
+              <input type="number" id="age" name="age">
+      
+              <label for="height">Estatura (m):</label>
+              <input type="number" id="height" name="height" step="0.01" min="1.0">
+      
+              <label for="position">Posición:</label>
+              <div class="select-container">
+                  <select id="position" name="position">
+                      <option value="" selected disabled>Elige una posición</option>
+                      <option value="delantero">Delantero</option>
+                      <option value="portero">Portero</option>
+                      <option value="defensa">Defensa</option>
+                      <option value="medio_campo">Medio Campo</option>
+                  </select>
+                  <div class="select-options">
+                      <option value="delantero">Delantero</option>
+                      <option value="portero">Portero</option>
+                      <option value="defensa">Defensa</option>
+                      <option value="medio_campo">Medio Campo</option>
+                  </div>
+              </div>
+      
+              <label for="gender">Género:</label>
+              <select id="gender" name="gender">
+                  <option value="" selected disabled>Elige un género</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+              </select>
+      
+              <label for="image">Imagen de Perfil:</label>
+              <input type="file" id="image" name="image">
+      
+              <input type="submit" value="Guardar">
+          </form>
+      
+      </div>
+      <!--detalles de la lista minuto38:55-->
+    </div>
+  </div>
 
-        // Función para cargar dinámicamente el contenido del formulario players
-        function loadCustomerForm() {
-            // Puedes usar fetch para cargar el contenido del formulario desde customer.html
-            fetch('customer.html')
-                .then(response => response.text())
-                .then(data => {
-                    // Inserta el contenido en el contenedor principal
-                    mainContent.innerHTML = data;
-                })
-                .catch(error => console.error('Error loading customer form:', error));
-        }
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-        // Agrega un evento de clic a la opción "Customer" para cargar el formulario
-        document.querySelector('.navigation li:nth-child(3)').addEventListener('click', loadCustomerForm);
-    </script>
+  <script>
+    //MenuToogle
+    let toggle = document.querySelector(".toggle");
+    let navigation = document.querySelector(".navigation");
+    let main = document.querySelector(".main");
+
+    toggle.onclick = function () {
+      navigation.classList.toggle("active");
+      main.classList.toggle("active");
+    };
+    //agregar el hovered en la clase de selecioonar el listado de item
+    let list = document.querySelectorAll(".navigation li");
+    function activeLink() {
+      list.forEach((item) => item.classList.remove("hovered"));
+      this.classList.add("hovered");
+    }
+    list.forEach((item) => item.addEventListener("mouseover", activeLink));
+  </script>
 </body>
 </html>
