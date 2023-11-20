@@ -371,14 +371,14 @@ input[type="submit"]:hover {
     }
     .cardBox
     {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 768px)
 {
     .details
     {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .recentOrders/*este apartado es de un listado de personas opcion de listado*/
     {
