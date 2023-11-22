@@ -4,29 +4,30 @@
   "info": {
     "singularName": "player",
     "pluralName": "players",
-    "displayName": "player"
+    "displayName": "player",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Nombrejugador": {
+    "name": {
       "type": "string"
     },
-    "FechaNac": {
+    "datebirth": {
       "type": "date"
     },
-    "Estatura": {
+    "age": {
+      "type": "integer"
+    },
+    "stature": {
+      "type": "decimal"
+    },
+    "position": {
       "type": "string"
     },
-    "Posicion": {
-      "type": "string"
-    },
-    "Genero": {
-      "type": "string"
-    },
-    "ImgJugador": {
+    "gender": {
       "type": "string"
     }
   }

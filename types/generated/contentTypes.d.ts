@@ -716,17 +716,18 @@ export interface ApiPlayerPlayer extends Schema.CollectionType {
     singularName: 'player';
     pluralName: 'players';
     displayName: 'player';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Nombrejugador: Attribute.String;
-    FechaNac: Attribute.Date;
-    Estatura: Attribute.String;
-    Posicion: Attribute.String;
-    Genero: Attribute.String;
-    ImgJugador: Attribute.String;
+    name: Attribute.String;
+    datebirth: Attribute.Date;
+    age: Attribute.Integer;
+    stature: Attribute.Decimal;
+    position: Attribute.String;
+    gender: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
