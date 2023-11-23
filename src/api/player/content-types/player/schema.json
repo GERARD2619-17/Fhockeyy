@@ -21,7 +21,7 @@
     "age": {
       "type": "integer"
     },
-    "stature": {
+    "height": {
       "type": "decimal"
     },
     "position": {
@@ -29,6 +29,16 @@
     },
     "gender": {
       "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

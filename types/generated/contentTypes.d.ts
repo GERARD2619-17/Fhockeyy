@@ -725,9 +725,10 @@ export interface ApiPlayerPlayer extends Schema.CollectionType {
     name: Attribute.String;
     datebirth: Attribute.Date;
     age: Attribute.Integer;
-    stature: Attribute.Decimal;
+    height: Attribute.Decimal;
     position: Attribute.String;
     gender: Attribute.String;
+    image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
